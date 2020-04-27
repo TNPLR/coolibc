@@ -175,6 +175,7 @@ Iterator rbegin(Vector const self)
 	res->set = rset;
 	res->next = next;
 	res->lt = lt;
+	res->freelt = freelt;
 	res->free = it_free;
 	return res;
 }
@@ -194,6 +195,7 @@ Iterator rend(Vector const self)
 	res->set = rset;
 	res->next = next;
 	res->lt = lt;
+	res->freelt = freelt;
 	res->free = it_free;
 	return res;
 }
